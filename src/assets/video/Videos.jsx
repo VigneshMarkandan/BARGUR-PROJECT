@@ -1,0 +1,1 @@
+export const video1='https://res.cloudinary.com/denmnkoks/video/upload/v1720769868/iitvideo_h2xrgh.mp4'

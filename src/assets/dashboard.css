@@ -1,0 +1,80 @@
+
+.totaldashboard {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 35px;
+    background-color: rgba(214, 209, 248, 0.3);
+    font-weight: 900;
+}
+
+.dashboard-container {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8); /* Light background color for the entire grid */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow for better visual effect */
+    width: 60%;
+    height: auto;
+    font-weight: 900;
+  }
+  
+  .dashboard-heading {
+    font-size: 28px;
+    color: rgba(2, 2, 76, 0.9); /* Deep blue shade for the heading */
+    border-bottom: 3px solid rgba(255, 140, 0); /* Simple underline for the heading */
+    display: inline-block;
+  }
+  
+  .dashboard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .dashboard-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    background: url('../assets/img/bg.png') no-repeat center center;
+    background-size: cover;
+  }
+  
+  .dashboard-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(4, 4, 91, 0.8); /* Deep blue shade */
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    transition: background-color 0.3s;
+  }
+  
+  .dashboard-item:hover {
+    background-color: rgba(255, 140, 0); /* Deep orange shade */
+  }
+  
+  .dashboard-item img {
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid white;
+    border-radius: 50%;
+  }
+  
+  .dashboard-item img:hover {
+    background-color: rgb(1, 1, 68);
+  }
+  
+  .dashboard-item p {
+    margin: 0;
+    font-size: 18px;
+  }
+  

@@ -1,0 +1,133 @@
+.newevents {
+    background-color: #f7f7f7;
+    /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
+  }
+  
+  .cards {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  main {
+    background-color: rgba(255, 255, 255, 0.8); /* White with some transparency */
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 5px;
+    background-size: cover;
+    background-blend-mode: overlay;
+    position: relative;
+    overflow: hidden; /* Ensure main doesn't overflow */
+  }
+  
+  .category-0 {
+    background-image: url('../assets/img/upcoming.png');
+    background-color: rgba(11, 89, 244, 0.512); /* Blue overlay */
+  }
+  
+  .category-1 {
+    background-image: url('../assets/img/upcoming.png');
+    background-color: rgba(11, 89, 244, 0.512); /* Red overlay */
+  }
+  
+  .category-2 {
+    background-image: url('../assets/img/upcoming.png');
+    background-color: rgba(11, 89, 244, 0.512);/* Green overlay */
+  }
+  
+  h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: white;
+    font-weight: 900;
+  }
+  
+  .events-list {
+    max-height: 150px; /* Adjust this value as needed */
+    overflow-y: auto;
+    margin-bottom: 15px;
+    background: none; /* Remove background from events-list */
+  }
+  
+  .event-item {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background: rgba(255, 255, 255, 0.7); /* Add background to event items for readability */
+    font-weight: 900;
+    border-bottom: 1px solid white;
+    color: maroon;
+  }
+  
+  .calendar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f8993b;
+    padding: 5px;
+    border-radius: 5px;
+    margin-right: 10px;
+  }
+  
+  .month {
+    font-size: 14px;
+    color: #fff;
+  }
+  
+  .day {
+    font-size: 18px;
+    color: #fff;
+    font-weight: bold;
+  }
+  
+  .year {
+    font-size: 12px;
+    color: #fff;
+  }
+  
+  .event-details {
+    flex: 1;
+  }
+  
+  .event-details p {
+    font-weight: bold;
+  }
+  
+  .button {
+    text-align: center;
+  }
+  
+  .button button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .button button span {
+    margin-left: 5px;
+  }
+  
+  @media (max-width: 768px) {
+    .events-list {
+      max-height: 100px;
+    }
+  
+    .event-item {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .calendar {
+      margin-bottom: 10px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .event-item {
+      padding: 10px;
+    }
+  }
+  
